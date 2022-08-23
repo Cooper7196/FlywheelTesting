@@ -4,7 +4,7 @@ Flywheel::Flywheel(pros::Motor *motor, VelPID *pid, EMAFilter *filter, double ge
 {
     this->flywheelMotor = motor;
     this->flywheelMotor->set_brake_mode(pros::E_MOTOR_BRAKE_COAST);
-    this->flywheelMotor->set_reversed(true);
+    this->flywheelMotor->set_reversed(false);
 
     this->pid = pid;
     this->rpmFilter = filter;

@@ -11,7 +11,7 @@
 double goal = 3600;
 pros::Motor flywheel_mtr(20);
 
-Flywheel flywheel(&flywheel_mtr, new VelPID(0, 0.05, 3.5, 30, -1740, 0.1), new EMAFilter(0.15), 21, 50);
+Flywheel flywheel(&flywheel_mtr, new VelPID(0, 0.05, 0.5, 3.5, -1740, 0.1), new EMAFilter(0.15), 21, 50);
 
 void on_right_button()
 {
